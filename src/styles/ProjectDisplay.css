@@ -51,3 +51,16 @@ h1 {
     transform: translateY(0);
   }
 }
+/* Your CSS file */
+
+.a-tag a {
+  display: block;
+  margin-bottom: 10px;
+  color: #0004f7; /* You can choose your desired link color */
+  text-decoration: none;
+}
+
+.a-tag a:hover {
+  text-decoration: underline;
+  
+}
