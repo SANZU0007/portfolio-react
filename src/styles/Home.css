@@ -1,53 +1,104 @@
+/* Home component styles */
 .home {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  font-family: "Arial", sans-serif;
   background-color: #ffffff;
-  color: rgb(17, 0, 114);
- 
+  padding: 20px 0;
 }
 
 .about {
-  width: 100%;
+  background-color: #ffffff;
   height: calc(100vh - 100px);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: rgb(17, 0, 114);
-  color: #f0f0f0;
+  color: #180070;
 }
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  padding-top: 20%;
+  animation: slideInUp 1s ease-in-out;
+}
+
 
 .sanjay {
-  color: blue; /* Initial color */
-  font-size: 24px; /* Initial font size */
-  animation: fadeIn 1s ease-in-out, textFade 1s ease-in-out, blink 5s ;
+  margin-top: 20px;
+  font-size: 24px;
+  animation: fadeIn 1s ease-in-out, textFade 1s ease-in-out, blink 5s;
   transition: color 0.5s ease;
 }
+.icons{
 
-/* Keyframe animation for fading in */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  color: #0011ff;
+}
+.skiles{
+  color: rgb(15, 1, 143);
+}
+#iconesss{
+  color: red;
+  background-color: #ffffff;
+  gap: 2px;
+  padding: 20px;
+  margin:solid red 1px;
 }
 
-/* Keyframe animation for text fading in */
-@keyframes textFade {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.skills {
+  font-size: 35px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  color: #000872;
+  animation: fadeInUp 1s ease-in-out;
 }
 
+.list {
+  list-style: none;
+  width: 60%;
+}
+
+.list span {
+  font-size: 20px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .home {
+    padding: 10px 0;
+  }
+
+  .about {
+    height: auto;
+    padding: 20px;
+  }
+
+  .profile-image {
+    padding-top: 10%;
+  }
+
+  .sanjay {
+    font-size: 18px;
+  }
+
+  .skills {
+    font-size: 30px;
+    padding: 20px;
+  }
+
+  .list {
+    width: 80%;
+  }
+}
 /* Keyframe animation for blinking */
 @keyframes blink {
   0%, 100% {
@@ -58,176 +109,9 @@
   }
 }
 
-/* Responsive styles */
-@media only screen and (max-width: 600px) {
-  .sanjay {
-    font-size: 18px; /* Adjust font size for smaller screens */
-  
-  }
-}
-
-.about h2 {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 80px;
-  color: #e9d35b;
-  height: 50px;
-}
-
-.about .prompt {
-  width: 40%;
-  font-size: 30px;
-}
-/* .prompt svg {
-  font-size: 60px;
-  margin: 5px;
-  color: white;
-} */
-/* Style for the main prompt container */
-.prompt {
-  text-align: center;
-  padding: 20px;
-}
-/* Style for the description text */
-.prompt p {
-  font-size: 20px;
-  margin-bottom: 15px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  padding-bottom: 60px;
-  
-  transform: translateY(40px); /* Initially moved down */
-  transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
-}
-
-/* Fade-in and slide-up animation on hover */
-.prompt:hover p {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-
-/* Style for the container of icons */
-.icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 40px;
-}
-
-/* Style for the anchor tags containing the icons */
-.icons a {
-  display: inline-block;
-  font-size: 30px;
-  margin: 0 10px;
-  padding: 10px; /* Added padding for better visual separation */
-  color: #02243d; /* Text color */
-  background-color: #f3f5fa; /* Background color */
-  border-radius: 90%; /* Make the background circular */
-  text-decoration: none;
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Added transition for background and transform */
-}
-
-/* Change background color and add a slight scale on hover */
-.icons a:hover {
-  background-color: #110247; /* New background color on hover */
-  transform: scale(1.1); /* Slightly scale up on hover */
-}
-
-/* Change icon color on hover */
-.icons a:hover {
-  color: #eef2f5;
-}
-
-
-.skills {
-  font-size: 35px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-
-.skills h1 {
-  color: #031f9e;
-}
-
-.skills .list {
-  list-style: none;
-  width: 60%;
-}
-
-.list span {
-  font-size: 20px;
-}
-
-
-@media only screen and (max-width: 600px) {
-  .about h2 {
-    font-size: 30px;
-  }
-
-  .about .prompt {
-    margin-top: 10px;
-    font-size: 20px;
-    width: 80%;
-  }
-
-  .skills {
-    text-align: center;
-  }
-  .list {
-    padding: 0;
-  }
-
-  .skills h2 {
-    font-size: 30px;
-  }
-}
-/* Base styles */
-.profile-image {
-  width: 200px;
-  height: 200px;
-  max-width: 200%;
-  height: auto;
-  margin-bottom: 10px;
- 
-  object-fit: cover;
-}
-
-/* Media query for screens up to 768px width */
-@media only screen and (max-width: 768px) {
-  .profile-image {
-    padding: 20px;
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
-    border-radius: 10%;
-    
-   
-  }
-}
-
-
-/* Media query for screens larger than 1024px width */
-@media only screen and (min-width: 1025px) {
-  .profile-image {
-   
-    background-color: #e9d35b;
-    margin-top: 7%;
-   border-radius: 4%;
-    
-    
-   
-  }
-}
-
-
-/* Add more media queries for other screen sizes as needed */
-
-/* Media query for screens larger than 1024px width */
-@media only screen and (min-width: 1025px) {
-  .profile-image {
-    /* Adjust styling for larger screens */
-  }
+/* Apply the blinking animation to the .blinking-text class */
+.blinking-text {
+  animation: blink 1s infinite;
+  color: red;
 }
 

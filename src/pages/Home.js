@@ -15,11 +15,11 @@ function Home() {
           alt="Profile"
           className="profile-image"
         />
-        <h2 className="sanjay"> Hi, My Name is sanjay</h2>
+       <h2 className="sanjay"> Hi, My Name is <b className="blinking-text">sanjay</b></h2>
 
         <div className="prompt">
           <p>A Full Stack web developer with a passion for learning and creating.</p>
-          <div className="icons">
+          <div id="iconesss">
 
           <a href="https://www.linkedin.com/in/sanjay-m-sanjay-89688825a/" target="_blank" rel="noopener noreferrer">
           <LinkedInIcon />
@@ -37,7 +37,7 @@ function Home() {
         </div>
       </div>
       <div className="skills">
-        <h1> Skills</h1>
+        <h1 className="skiles"> Skills</h1>
         <ol className="list">
           <li className="item">
             <h2> Front-End</h2>
