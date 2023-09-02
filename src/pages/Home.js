@@ -3,7 +3,7 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import  TwitterIcon from "@material-ui/icons/Twitter";
 import GithubIcon from "@material-ui/icons/GitHub";
 import "../styles/Home.css";
-import sanjay from "../assets/sanjay.png";
+import sanjay001 from "../assets/sanjay001.jpg";
 
 function Home() {
   return (
@@ -11,7 +11,7 @@ function Home() {
       <div className="about">
      
         <img
-          src={sanjay}
+          src={sanjay001}
           alt="Profile"
           className="profile-image"
         />
