@@ -15,7 +15,7 @@ function Home() {
           alt="Profile"
           className="profile-image"
         />
-       <h2 className="sanjay"> Hi, My Name is <b className="blinking-text">sanjay</b></h2>
+       <h5 className="sanjay"> Hi, My Name  is  <b className="blinking-text">sanjay</b></h5>
 
         <div className="prompt">
           <p>A Full Stack web developer with a passion for learning and creating.</p>

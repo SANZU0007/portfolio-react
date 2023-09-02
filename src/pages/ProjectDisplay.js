@@ -18,13 +18,13 @@ function ProjectDisplay() {
         style={{ maxWidth: "40%", height: "auto" }}
       />
       <p>
-        <b>Skills:</b> {project.skills}
+        <h3 >Skills: </h3> {project.skills}
       </p>
       <h5 className="a-tag">
-        <a href={project.link}>1 click to deploy Link</a>
-        
+        <a href={project.link}> 1 click to project deploy <b>Link...</b></a>
 
-        <a href={project.link2}>2 click to Github Link</a>
+        <a href={project.link2}> 2 click to frontend code Github <b>Link</b></a>
+        <a href={project.link3} >3 click to Backend code  Github <b>Link</b></a>
       </h5>
     </div>
   );

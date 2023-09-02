@@ -64,3 +64,17 @@ h1 {
   text-decoration: underline;
   
 }
+/* Define the blinking animation */
+@keyframes blink {
+  0% {  color:#000480; }
+  50% { color: transparent; }
+  100% { color: rgb(255, 0, 0); }
+}
+
+/* Apply the animation to the <b> tag */
+b {
+  animation: blink 2s infinite;
+}
+h3{
+  color:#000480
+}
