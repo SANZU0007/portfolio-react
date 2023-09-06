@@ -3,12 +3,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #ffffff;
+  background: #5166db;
+background: -webkit-linear-gradient(168deg, #5166db 0%, #f15af1 100%);
+background: linear-gradient(168deg, #5166db 0%, #f15af1 100%);
   padding: 20px 0;
 }
 
 .about {
-  background-color: #ffffff;
   height: calc(100vh - 100px);
   display: flex;
   flex-direction: column;
@@ -24,11 +25,13 @@
   max-width: 100%;
   height: auto;
   object-fit: cover;
-  padding-top: 20%;
-  animation: slideInUp 1s ease-in-out;
+  border-radius: 2 2 2 2;
   
+  animation: slideInUp 1s ease-in-out;
+  background: #5166db;
+  background: -webkit-linear-gradient(168deg, #5166db 0%, #f15af1 100%);
+  background: linear-gradient(168deg, #5166db 0%, #da22ff 100%);
 }
-
 
 .sanjay {
   margin-top: 20px;
@@ -36,19 +39,74 @@
   animation: fadeIn 1s ease-in-out, textFade 1s ease-in-out, blink 5s;
   transition: color 0.5s ease;
 }
-.icons{
 
-  color: #0011ff;
+.icons {
+  color: #ff0000;
 }
-.skiles{
+
+.skiles {
   color: rgb(15, 1, 143);
 }
-#iconesss{
+
+#iconesss {
   color: red;
-  background-color: #ffffff;
+/* Home component styles */
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #5166db;
+  background: -webkit-linear-gradient(168deg, #5166db 0%, #f15af1 100%);
+  background: linear-gradient(168deg, #5166db 0%, #f15af1 100%);
+  padding: 20px 0;
+}
+
+.about {
+  height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #180070;
+}
+
+.profile-image {
+  width: 300px;
+  height: 400px;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+
+  animation: slideInUp 1s ease-in-out;
+
+  background: #5166db;
+  background: -webkit-linear-gradient(168deg, #5166db 0%, #f15af1 100%);
+  background: linear-gradient(168deg, #5166db 0%, #f15af1 100%);
+}
+
+.sanjay {
+  margin-top: 20px;
+  font-size: 24px;
+  animation: fadeIn 1s ease-in-out, textFade 1s ease-in-out, blink 5s;
+  transition: color 0.5s ease;
+
+}
+
+.icons {
+  color: #ff0000;
+}
+
+.skiles {
+  color: rgb(15, 1, 143);
+}
+
+#iconesss {
+  color: red;
+  background-color: #e96900;
   gap: 2px;
   padding: 20px;
-  margin:solid red 1px;
+  margin: solid red 1px;
 }
 
 .skills {
@@ -72,7 +130,7 @@
   font-size: 20px;
 }
 
-
+/* Media Query for screens with a maximum width of 768px */
 @media only screen and (max-width: 768px) {
   .home {
     padding: 10px 0;
@@ -100,6 +158,7 @@
     width: 80%;
   }
 }
+
 /* Keyframe animation for blinking */
 @keyframes blink {
   0%, 100% {
@@ -116,3 +175,77 @@
   color: red;
 }
 
+  gap: 2px;
+  padding: 20px;
+  margin: solid red 1px;
+}
+
+.skills {
+  font-size: 35px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  color: #000872;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.list {
+  list-style: none;
+  width: 60%;
+}
+
+.list span {
+  font-size: 20px;
+}
+
+/* Media Query for screens with a maximum width of 768px */
+@media only screen and (max-width: 768px) {
+  .home {
+    padding: 10px 0;
+  }
+
+  .about {
+    height: auto;
+    padding: 20px;
+  }
+
+  .profile-image {
+    padding-top: 10%;
+  }
+
+  .sanjay {
+    font-size: 18px;
+  }
+
+  .skills {
+    font-size: 30px;
+    padding: 20px;
+  }
+
+  .list {
+    width: 80%;
+  }
+}
+
+/* Keyframe animation for blinking */
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Apply the blinking animation to the .blinking-text class */
+.blinking-text {
+  animation: blink 1s infinite;
+  color: red;
+}
+
+#profile-image1{
+  background-color: red;
+}

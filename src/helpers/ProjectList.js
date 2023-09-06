@@ -6,6 +6,17 @@ import Proj5 from "../assets/proj5.jpg";
 import Proj6 from "../assets/proj6.jpg";
 
 export const ProjectList = [
+  {
+    name: "Book Store",
+    image: Proj5,
+    image:"https://images.unsplash.com/photo-1490004047268-5259045aa2b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGJvb2slMjBzdG9yZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60",
+    skills: "JavaScript,HTML,CSS,react.js,express.js,mongoDB",
+    link: "https://keen-kangaroo-8fa4ca.netlify.app",
+
+    link2: "https://github.com/SANZU0007/book-store-frontend.git",
+    link3: "https://github.com/SANZU0007/book-store-backend.git",
+
+  },
  
   {
     name: " ToDo",

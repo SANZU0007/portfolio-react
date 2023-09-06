@@ -13,7 +13,7 @@ function Home() {
         <img
           src={sanjay001}
           alt="Profile"
-          className="profile-image"
+          className="profile-image" id="profile-image1"
         />
        <h5 className="sanjay"> Hi, My Name  is  <b className="blinking-text">sanjay</b></h5>
 
