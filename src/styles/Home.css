@@ -1,251 +1,150 @@
-/* Home component styles */
+/* styles/Home.css */
+
 .home {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #5166db;
-background: -webkit-linear-gradient(168deg, #5166db 0%, #f15af1 100%);
-background: linear-gradient(168deg, #5166db 0%, #f15af1 100%);
-  padding: 20px 0;
+  justify-content: center;
+  height: 200%;
+  padding: 20px;
+ background-color: rgb(255, 255, 255);
 }
 
 .about {
-  height: calc(100vh - 100px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: center;
-  color: #180070;
+  margin-bottom: 20px;
 }
 
 .profile-image {
   width: 200px;
   height: 200px;
-  max-width: 100%;
-  height: auto;
+  border-radius: 10%;
   object-fit: cover;
-  border-radius: 2 2 2 2;
-  
-  animation: slideInUp 1s ease-in-out;
-  background: #5166db;
-  background: -webkit-linear-gradient(168deg, #5166db 0%, #f15af1 100%);
-  background: linear-gradient(168deg, #5166db 0%, #da22ff 100%);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+  transition: transform 0.2s ease-in-out;
+  margin-top: 20px;
+}
+
+.profile-image:hover {
+  transform: scale(1.2);
 }
 
 .sanjay {
-  margin-top: 20px;
   font-size: 24px;
-  animation: fadeIn 1s ease-in-out, textFade 1s ease-in-out, blink 5s;
-  transition: color 0.5s ease;
+  margin: 10px 0;
+  color: rgb(3, 3, 80);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 700;
 }
 
-.icons {
-  color: #ff0000;
+.blinking-text {
+  animation: blink 1s infinite;
+  color: red;
 }
 
-.skiles {
-  color: rgb(15, 1, 143);
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.developer{
+  color: rgba(11, 0, 105, 0.938);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.prompt {
+  font-size: 18px;
+  margin: 10px 0;
 }
 
 #iconesss {
-  color: red;
-/* Home component styles */
-.home {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: #5166db;
-  background: -webkit-linear-gradient(168deg, #5166db 0%, #f15af1 100%);
-  background: linear-gradient(168deg, #5166db 0%, #f15af1 100%);
-  padding: 20px 0;
+  justify-content: center;
+  margin-top: 20px;
+ 
+
 }
 
-.about {
-  height: calc(100vh - 100px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+#iconesss a {
+  text-decoration: none;
+  color: #00054b;
+ 
+  border-radius: 50%;
+ 
+  margin: 0 20px 3px 5px;
+  font-size: 24px;
+  transition: color 0.7s;
+}
+
+#iconesss a:hover {
+  color: #ff0000;
+}
+
+.skills {
   text-align: center;
-  color: #180070;
 }
 
-.profile-image {
-  width: 300px;
-  height: 400px;
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
-
-  animation: slideInUp 1s ease-in-out;
-
-  background: #5166db;
-  background: -webkit-linear-gradient(168deg, #5166db 0%, #f15af1 100%);
-  background: linear-gradient(168deg, #5166db 0%, #f15af1 100%);
+.skills-heading {
+  font-size: 32px;
+  margin-bottom: 20px;
 }
 
-.sanjay {
-  margin-top: 20px;
-  font-size: 24px;
-  animation: fadeIn 1s ease-in-out, textFade 1s ease-in-out, blink 5s;
-  transition: color 0.5s ease;
-
-}
-
-.icons {
-  color: #ff0000;
-}
-
-.skiles {
-  color: rgb(15, 1, 143);
-}
-
-#iconesss {
-  color: red;
-  background-color: #e96900;
-  gap: 2px;
-  padding: 20px;
-  margin: solid red 1px;
-}
-
-.skills {
-  font-size: 35px;
-  width: 100%;
+.skills-logos {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  padding: 40px;
-  color: #000872;
-  animation: fadeInUp 1s ease-in-out;
+  gap: 20px;
 }
 
-.list {
-  list-style: none;
-  width: 60%;
+.skills-Logo1 {
+  width: 100px;
+  height: 100px;
+  transition: transform 0.1s ease-in-out;
+  animation: spin 4s linear infinite; /* Continuous rotation */
+}
+#skills-Logo2{
+  transition: transform 0.1s ease-in-out;
+  animation: spin 0.1ms linear infinite;
 }
 
-.list span {
-  font-size: 20px;
+.skills-Logo1:hover {
+  transform: scale(1.1) rotate(10deg);
 }
 
-/* Media Query for screens with a maximum width of 768px */
-@media only screen and (max-width: 768px) {
-  .home {
-    padding: 10px 0;
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
   }
-
-  .about {
-    height: auto;
-    padding: 20px;
+  100% {
+    transform: rotate(360deg); /* Rotate 360 degrees */
   }
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+  /* ... (previous responsive styles) ... */
 
   .profile-image {
-    padding-top: 10%;
+    width: 150px;
+    height: 150px;
   }
 
   .sanjay {
-    font-size: 18px;
+    font-size: 20px;
   }
 
-  .skills {
-    font-size: 30px;
-    padding: 20px;
+  .skills-heading {
+    font-size: 28px;
   }
-
-  .list {
-    width: 80%;
+  
+  .skills-Logo1 {
+    width: 80px;
+    height: 80px;
   }
-}
-
-/* Keyframe animation for blinking */
-@keyframes blink {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-}
-
-/* Apply the blinking animation to the .blinking-text class */
-.blinking-text {
-  animation: blink 1s infinite;
-  color: red;
-}
-
-  gap: 2px;
-  padding: 20px;
-  margin: solid red 1px;
-}
-
-.skills {
-  font-size: 35px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  padding: 40px;
-  color: #000872;
-  animation: fadeInUp 1s ease-in-out;
-}
-
-.list {
-  list-style: none;
-  width: 60%;
-}
-
-.list span {
-  font-size: 20px;
-}
-
-/* Media Query for screens with a maximum width of 768px */
-@media only screen and (max-width: 768px) {
-  .home {
-    padding: 10px 0;
-  }
-
-  .about {
-    height: auto;
-    padding: 20px;
-  }
-
-  .profile-image {
-    padding-top: 10%;
-  }
-
-  .sanjay {
-    font-size: 18px;
-  }
-
-  .skills {
-    font-size: 30px;
-    padding: 20px;
-  }
-
-  .list {
-    width: 80%;
-  }
-}
-
-/* Keyframe animation for blinking */
-@keyframes blink {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-}
-
-/* Apply the blinking animation to the .blinking-text class */
-.blinking-text {
-  animation: blink 1s infinite;
-  color: red;
-}
-
-#profile-image1{
-  background-color: red;
 }
