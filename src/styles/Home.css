@@ -148,3 +148,42 @@
     height: 80px;
   }
 }
+/* Styling for the "Send Email" button */
+button {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #030013;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #07002c;
+  transform: scale(1.05);
+}
+
+/* Styling for the "Download CV" link */
+.contact-details a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.contact-details a:hover {
+  color: #ffffff;
+}
+
+/* Styling for the phone number */
+#call-1 {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #070049;
+  animation: glowing 2s infinite; /* Add glowing animation */
+}
+#cv-1{
+  color: #ffffff;
+}
