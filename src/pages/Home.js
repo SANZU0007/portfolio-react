@@ -8,19 +8,18 @@ function Home() {
     "https://drive.google.com/file/d/1chyrDO1fRl06obFWijJO_gzrgk0k-YnD/view?usp=drivesdk";
 
   const openEmailClient = () => {
-    const subject = "Contact Request"; // Email subject
-    const email = "sanjaykuttyags@gmail.com"; // Your email address
+    const subject = "Contact Request";
+    const email = "sanjaykuttyags@gmail.com";
 
     const body = `
-    Hi,i am sanjay
-
-    I'd like to get in touch with you.`;
+      Hi, I am Sanjay.
+      I'd like to get in touch with you.
+    `;
 
     const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(
       subject
     )}&body=${encodeURIComponent(body)}`;
 
-    // Open the user's default email client
     window.location.href = mailtoLink;
   };
 
@@ -33,21 +32,20 @@ function Home() {
           className="profile-image"
           id="profile-image1"
         />
-        <h3 className="sanjay">
-          Hi, My Name is <b className="blinking-text">sanjay</b>
+        <h3 className="sanjay developer">
+          Hi, My Name is <b className="blinking-text">Sanjay</b>
         </h3>
 
         <div className="prompt">
           <h4 className="developer">
-            A Full Stack web developer with a passion for{" "}
-            <b>learning and creating.</b>
+            A Full Stack web developer with a passion for <b>learning and creating.</b>
           </h4>
         </div>
       </div>
       <div className="skills">
         <h1 className="skills-heading">Skills</h1>
         <div className="skills-Logo">
-          <img
+        <img
             className="skills-Logo1"
             src="https://img.icons8.com/?size=1x&id=20909&format=png"
             alt="no-image"
@@ -97,23 +95,27 @@ function Home() {
             className="skills-Logo1"
             src="https://img.icons8.com/?size=1x&id=74402&format=png"
           ></img>
+       
         </div>
       </div>
       <Projects />
       <div className="contact-details">
-  <h1 className="resume-style">Contact Me</h1>
+        <h1 className="resume-style">Contact Me</h1>
 
-  <button  role="img" aria-label="Email" onClick={openEmailClient}> &#9993; "click to Send Email"</button>
- <p>
- <button id="cv-1"> 
-  <a href={resumeURL} target="_blank" rel="noopener noreferrer">
-    Resume CV
-  </a>
-  </button>
-  </p>
-  <p id="call-1"> &#9742; +91 78680 52815</p>
-</div>
-
+        <button role="img" aria-label="Email" onClick={openEmailClient}>
+          &#9993; Click to Send Email
+        </button>
+        
+        <p>
+          <button id="cv-1"> 
+            <a href={resumeURL} target="_blank" rel="noopener noreferrer">
+              Download Resume CV
+            </a>
+          </button>
+        </p>
+        
+        <p id="call-1"> &#9742; +91 78680 52815</p>
+      </div>
     </div>
   );
 }

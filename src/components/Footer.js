@@ -1,6 +1,6 @@
 import React from "react";
 import InstagramIcon from "@material-ui/icons/Instagram";
-import WhatsAppIcon from "@material-ui/icons/WhatsApp";
+import GitHubIcon from "@material-ui/icons/GitHub";
 
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import "../styles/Footer.css";
@@ -10,11 +10,18 @@ function Footer() {
     <div className="footer">
       <div className="socialMedia">
         <a
-          href="https:wa.me/qr/CLHH3IS3MS2HE1"
+          href="https://github.com/SANZU0007"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <WhatsAppIcon />
+          <GitHubIcon />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/sanjay-m-sanjay-89688825a/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <LinkedInIcon />
         </a>
 
         <a
@@ -23,13 +30,6 @@ function Footer() {
           rel="noopener noreferrer"
         >
           <InstagramIcon />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/sanjay-m-sanjay-89688825a/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <LinkedInIcon />
         </a>
       </div>
       <p> &copy; 2023 SanjayWeb.com</p>
