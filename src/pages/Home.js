@@ -37,7 +37,7 @@ function Home() {
       } else {
         clearInterval(typingInterval);
       }
-    }, 100); // Adjust typing speed (milliseconds)
+    }, 200); // Adjust typing speed (milliseconds)
 
     // Clear the interval after typing the entire text once
     return () => {
@@ -50,7 +50,7 @@ function Home() {
       <div className="about">
         <img
           src={sanjay001}
-          alt="Profile"
+          alt=""
           className="profile-image"
           id="profile-image1"
         />
@@ -65,19 +65,70 @@ function Home() {
       <div className="skills">
         <h1 className="skills-heading">Skills</h1>
         <div className="skills-logos">
-          {/* Your skills logos */}
+          <img
+            className="skills-Logo1"
+            src="https://img.icons8.com/?size=1x&id=20909&format=png"
+            alt=""
+          ></img>
+          <img
+            className="skills-Logo1"
+            src="https://img.icons8.com/?size=1x&id=21278&format=png"
+            alt=""
+          ></img>
+          <img
+            className="skills-Logo1"
+            src="https://img.icons8.com/?size=1x&id=PXTY4q2Sq2lG&format=png"
+            alt=""
+          ></img>
+          <img
+            className="skills-Logo1"
+            src="https://img.icons8.com/?size=1x&id=hsPbhkOH4FMe&format=png"
+            alt=""
+          ></img>
+          <img
+            className="skills-Logo1"
+            id="skills-Logo2"
+            src="https://img.icons8.com/?size=1x&id=123603&format=png"
+            alt=""
+          ></img>
+          <img
+            className="skills-Logo1"
+            src="https://img.icons8.com/?size=1x&id=gFw7X5Tbl3ss&format=png"
+            alt=""
+          ></img>
+          <img
+            className="skills-Logo1"
+            src="https://img.icons8.com/?size=1x&id=jD-fJzVguBmw&format=png"
+            alt=""
+          ></img>
+          <img
+            className="skills-Logo1"
+            src="https://img.icons8.com/?size=1x&id=kg46nzoJrmTR&format=png"
+            alt=""
+          ></img>
+          
+          <img
+            className="skills-Logo1"
+            src="https://img.icons8.com/?size=1x&id=20906&format=png"
+            alt=""
+          ></img>
+          <img
+            className="skills-Logo1"
+            src="https://img.icons8.com/?size=1x&id=74402&format=png"
+            alt=""
+          ></img>
         </div>
       </div>
       <Projects />
       <div className="contact-details">
         <h1 className="resume-style">Contact Me</h1>
 
-        <button role="img" aria-label="Email" onClick={openEmailClient}>
+        <button  id="button" role="img" aria-label="Email" onClick={openEmailClient}>
           &#9993; Click to Send Email
         </button>
 
         <p>
-          <button id="cv-1">
+          <button id="button">
             <a href={resumeURL} target="_blank" rel="noopener noreferrer">
               Download Resume CV
             </a>

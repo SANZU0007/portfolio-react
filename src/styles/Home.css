@@ -7,10 +7,12 @@
   justify-content: center;
   height: 200%;
   padding: 20px;
-  background-color: #ffffff;
 }
 
-.about, .sanjay, .developer, .prompt {
+.about,
+.sanjay,
+.developer,
+.prompt {
   text-align: center;
 }
 
@@ -19,7 +21,7 @@
   height: 200px;
   border-radius: 10%;
   object-fit: cover;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 10px rgba(1, 6, 75, 0.7);
   transition: transform 0.2s ease-in-out;
   margin: 20px 0;
 }
@@ -39,7 +41,8 @@
 }
 
 @keyframes blink {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0;
   }
   50% {
@@ -47,11 +50,10 @@
   }
 }
 
-
 .developer {
   font-size: xx-large;
   font-weight: 900;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   animation: colorChange 2s alternate infinite, slideRight 2s linear infinite;
 }
 
@@ -91,7 +93,6 @@
     transform: scale(1.1);
   }
 }
-
 
 .prompt {
   font-size: 18px;
@@ -133,7 +134,8 @@
   gap: 20px;
 }
 
-.skills-Logo1, #skills-Logo2 {
+.skills-Logo1,
+#skills-Logo2 {
   width: 100px;
   height: 100px;
   transition: transform 0.1s ease-in-out;
@@ -172,40 +174,84 @@
     height: 80px;
   }
 }
+/* CSS for a button with custom styles and animations */
+@keyframes rotateBorderColorAndStyles {
+  0% {
+    border-color: red;
+    background-color: transparent;
+    font-size: 16px;
+  }
+  0% {
+    border-color: rgb(206, 206, 240);
+    background-color: transparent;
+    font-size: 18px;
+  }
+  0% {
+    border-color: rgb(238, 252, 238);
+    background-color: transparent;
+    font-size: 20px;
+  }
+  25% {
+    border-color: purple;
+    background-color: transparent;
+    font-size: 22px;
+  }
+  0% {
+    border-color: rgb(0, 38, 255);
+    background-color: transparent;
+    font-size: 16px; /* Reset styles to initial values */
+  }
+}
 
-button {
-  font: 16px Georgia, "Times New Roman", Times, serif;
-  background: #100069;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
+/* Pulse animation */
+@keyframes pulse {
+  0% {
+    transform: scale(0.1);
+  }
+  25% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0-1);
+  }
+}
+
+/* Apply the rotating border color and styles animation to the button */
+#button {
+  font: 18px Arial, sans-serif; /* Different font and size */
+  color: #e60ec2; /* Different text color */
+  padding: 15px 30px; /* Adjusted padding */
+  border: 1px solid rgb(48, 18, 216) (38, 0, 255); /* Different initial border style */
+  border-radius: 10px; /* Rounded corners */
+  background-color: #0400e7; /* Background color */
   cursor: pointer;
-  transition: background 0.3s ease, transform 0.2s ease;
+  animation: rotateBorderColorAndStyles 8s linear infinite,
+    pulse 2s ease infinite; /* Different animation durations and easing */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Add a shadow */
+  transition: background-color 0.3s ease; /* Smooth color transition on hover */
 }
 
 button:hover {
-  background: #02000a;
-  transform: scale(1.05);
+  background-color: #ff6600; /* Change background color on hover */
 }
 
 .contact-details a {
   text-decoration: none;
-  color: #fff;
+  color: #1900ff;
   transition: color 0.3s ease;
 }
 
 .contact-details a:hover {
-  color: #fff;
+  color: #1614af;
 }
 
 #call-1 {
   font-size: 18px;
   margin-top: 10px;
-  color: #070049;
+  color: #000a25;
   animation: glowing 2s infinite;
 }
 
 #cv-1 {
-  color: #fff;
+  color: #270583;
 }
